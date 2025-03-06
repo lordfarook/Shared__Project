@@ -1,8 +1,3 @@
-from operator import contains
-
-from Udemy import myset
-from time import process_time_ns
-
 physics, math, english
 sum_grades_student.append(grade)    #adds to a list
 
@@ -164,3 +159,26 @@ for num in for_list:
     if num == 3:
         break               break will just stop the loop from running at the condition
     print(num)
+
+
+
+'Instead of writing this:'
+my_list = "you are good"
+for x in my_list:              -----> Instead of 4 lines we can reducs it to 1 line
+    if x != ' ':
+        print(x)
+
+
+'We can do this:'
+
+my_list = 'you are good'
+y = [x for x in my_list]   ----->   allows us to shorten the for loops we are creating.
+print(y)
+
+y = [x for x in my_list]            y -> the name
+                                    the first x is the action of the for loop
+                                    the rest is the loop itself
+
+y = [x for x in my_list if x!= " "]    we can also add an if to the loop. Which
+
+
