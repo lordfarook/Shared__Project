@@ -1,3 +1,4 @@
+2.
 def myfunc(double):
     list = double.split()
     word1 = list[0]

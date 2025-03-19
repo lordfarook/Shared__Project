@@ -1,3 +1,6 @@
+from PyQt5.QtCore.QTimeZone import kwargs
+from defer import return_value
+
 physics, math, english
 sum_grades_student.append(grade)    #adds to a list
 
@@ -30,7 +33,7 @@ shuffle(my_list)
 print(my_list)
 
 
-                                                'LIST' []
+.                                        'LIST' []
 
 "append()" command allows you to add the item in () to the end of the list
 "pop" command allows you to delete on item from your list
@@ -52,8 +55,9 @@ my_list.count('a')
 my_list.index('a')
 my_list.strip()
 my_list.split(",")
+my_list.
 
-                                              'DICTIONARY' {}
+.                                     'DICTIONARY' {}
 
 In a dict you can have list, dict, string, float, numbers.
 you can also add more dict with the dict['k3']=100
@@ -66,13 +70,13 @@ my_dict.values()
 my_dict.items()
 
 
-                                                'tuples'  ()
+.                                       'tuples'  ()
 
 tuples are like lists, the only major change is that the are immuable.
 the great benefit of it comes in advanced programing
 
 
-                                                  'set'
+.                                          'set'
 
 A set is a unique command which if the same item exists twise at in the output we will get it ones, like the example:
 myset.add() command allows us to add items to the set
@@ -85,12 +89,12 @@ print(myset)
 input("{1, 2}")
 
 
-                                              'booleans-bool'
+.                                       'booleans-bool'
 
 True
 False
 
-                                              'opening file'
+.                                       'opening file'
 
 with open("myfile.txt", "w") as file:
     file.write("""hello this is the firstweekday
@@ -100,7 +104,7 @@ this is the third line
 
 
 
-                                                'For Loops'
+.                                        'For Loops'
 
 for_list = [1,2,3,4]
 for x in for_list:
@@ -181,4 +185,54 @@ y = [x for x in my_list]            y -> the name
 
 y = [x for x in my_list if x!= " "]    we can also add an if to the loop. Which
 
+
+def myfunc(my_string):
+    new = ''
+    for index, letter in enumerate(my_string):          enumerate(str) function allows us to break down a string, a list
+        if index%2 == 0:                                    to the index (placement) of every letter inside our str
+            new += letter.upper()
+        else:
+            new += letter
+    return new
+
+print(myfunc('maimoni'))
+
+def myfunc(*args):
+    for index,num in enumerate(args, start=1):          start=1 allows us to start the index at 1 instead of 0
+        print(f"Index {index} -> {num}")
+
+myfunc('apple', 'banana', 'pich')
+#output
+Index 1 -> apple
+Index 2 -> banana
+Index 3 -> pich
+
+
+
+.                              '*args    and    *kwargs'
+
+def myfunc(*args):          ---> *args allows us to create a tuple(list) of infinite items inside a function
+    for x in args:                      {does not have to be '*args' it can be only '*' with a word like ('*or')}
+        print(x)
+
+myfunc(10,'hello',30)
+
+
+def my_func(**kwarg):           ---> With the '**kwarg' command we can create an infinite items in the dictionary in our function
+    for key,value in kwarg.items():                In addintion '**kwarg' can be exchange to '**or' if wanted
+        print(key)
+        print(value)
+my_func(apple=100, banana=300)
+
+
+
+                                   'def functions'
+
+def myfunc(a,b):
+    if a%2 == 0 and b%2 == 0:
+        return min(a,b)             min() will return the lesser num in the ()
+    else:
+        return max(a,b)             max() will return the highest value num in the ()
+
+print(myfunc(2,4))
 

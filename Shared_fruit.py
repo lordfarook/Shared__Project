@@ -10,7 +10,7 @@ while owner not in roles:
     print("Invalid identification please try again!\n -Owner\n -Customer")
     owner = input("Are you an owner or a customer? ").lower()
 if owner == 'owner' or owner == 'an owner':
-    y = input("Would you like to add suply to your store? ")
+    y = input("Would you like to add supply to your store? ")
     if y == 'yes':
         num_new_fruit = int(input("How many fruits would you like to add to your store? "))
         while x < num_new_fruit:
