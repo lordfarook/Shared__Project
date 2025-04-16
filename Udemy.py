@@ -1,11 +1,10 @@
-def myfunc(double):
-    list = double.split()
-    word1 = list[0]
-    word2 = list[1]
-    if word1[0] == word2[0]:
-        return True
-    else:
-        return False
+def Board():
+    board = [[' ',' ',' '],  #[0] - row 1
+             [' ',' ',' '],  #[1] - row 2
+             [' ',' ',' ']]  #[2] - row 3
+    return board
 
-print(myfunc('or oaimoni'))
+def Sign(board):
+    row = int(input("What is going to be your row? (1-3)")) - 1
+    col = int(input("What is going to be your row? (1-3)"))
 

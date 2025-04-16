@@ -1,5 +1,10 @@
 from PyQt5.QtCore.QTimeZone import kwargs
 from defer import return_value
+from Udemy import capitalize
+
+'Shortcuts'
+ctrl + R ---> to replace 'x' to a 'y'
+ctrl + / ---> to disable all the lines selected (basically put at all the beggining of the lines '#')
 
 physics, math, english
 sum_grades_student.append(grade)    #adds to a list
@@ -44,6 +49,7 @@ print(my_list)
 "index('a')" command will show me the first index (place on the list) of 'a'
 "my_list.strip()" command eliminates all spaces ('  ') in the list
 "my_list.split(",")" command helps if, for example I have a string ---> it will break it to sub-strings
+"my_list.capitalize()" command capitalize the first letter in the word (hello -> Hello)
 
 my_list = ["milk", 97, 23.334]
 my_list.append(93)
@@ -55,7 +61,9 @@ my_list.count('a')
 my_list.index('a')
 my_list.strip()
 my_list.split(",")
-my_list.
+my_list.capitalize()
+
+
 
 .                                     'DICTIONARY' {}
 

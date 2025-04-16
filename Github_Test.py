@@ -1,12 +1,15 @@
-2.
-def myfunc(double):
-    list = double.split()
-    word1 = list[0]
-    word2 = list[1]
-    if word1[0] == word2[0]:
-        return True
-    else:
-        return False
+def make_grid():
+    grid = [
+        [' ', ' ', ' '],  # row 0
+        [' ', ' ', ' '],  # row 1
+        [' ', ' ', ' ']   # row 2
+    ]
+    return grid
 
-print(myfunc('or oaimoni'))
+my_grid = make_grid()
 
+# Access the middle cell (row 1, col 1)
+print(my_grid[1][1])  # → ' '
+
+# Change a cell value
+my_grid[0][0] = 'X'
