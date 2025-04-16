@@ -1,4 +1,4 @@
-def my_list():j
+def my_list():
     first_line = [' ',' ',' ']
     second_line = [' ',' ',' ']
     third_line = [' ',' ',' ']

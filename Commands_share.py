@@ -6,7 +6,10 @@ from Udemy import capitalize
 ctrl + R ---> to replace 'x' to a 'y'
 ctrl + / ---> to disable all the lines selected (basically put at all the beggining of the lines '#')
 
-physics, math, english
+.                                            'Usefull commands' "x.replace"
+string = 'h ell o' - ---- replce
+command can take a value and replce it for example in these example eliminating all spaces string = string.replace(' ', '') print(string)
+
 sum_grades_student.append(grade)    #adds to a list
 
 print("{}".format(""))
@@ -18,15 +21,14 @@ r = record
 print("your best record is {0:10.5f}".format(record))   /   print(f"your best record is {record:10.5f}")
 a = 0.123456789 -----> 0.123      print(f"{a:.3f}")       []
 
-"join command:"
+"join command:"        -----   join command allows us to take all the items inside y '{may be list, dict.(keys), dict.(values) ....}' and put inside between them whatever I put in ""
 my_list = []
 new_my_list = ", ".join(mylist)
-x = "".join(y)   -----   join command allows us to take all the items inside y '{may be list, dict.(keys), dict.(values) ....}' and put inside between them whatever I put in ""
-
-"map command"
+x = "".join(y)
+"map command"             --- [at line 240 it is more explained]
 map(function, intrable)
 my_list = ['1','2','3','4','5']
-print(sum(map(int, my_list)))  ----- map command allows us to convert a list '(iterable)' to a number/somethingh else '(function)'
+print(sum(map(int, my_list)))
 
 "from random import (ctrl + space)" -----> will give us the option for randint, shuffle, and more
 from random import randint
@@ -50,6 +52,7 @@ print(my_list)
 "my_list.strip()" command eliminates all spaces ('  ') in the list
 "my_list.split(",")" command helps if, for example I have a string ---> it will break it to sub-strings
 "my_list.capitalize()" command capitalize the first letter in the word (hello -> Hello)
+"set()" command allows me to eliminate all double writen items [1,1,1,2,2,2,3,3] ---> [1,2,3]   {Works with either nums nor letters}
 
 my_list = ["milk", 97, 23.334]
 my_list.append(93)
@@ -62,7 +65,7 @@ my_list.index('a')
 my_list.strip()
 my_list.split(",")
 my_list.capitalize()
-
+my_list.capitalize()list(set(my_list))
 
 
 .                                     'DICTIONARY' {}
@@ -243,4 +246,18 @@ def myfunc(a,b):
         return max(a,b)             max() will return the highest value num in the ()
 
 print(myfunc(2,4))
+
+
+'map' num_list = [1, 2, 3, 4, 5]
+def myfunc(num):
+    return num**2 for item in map(myfunc , num_list):
+    --- With map function we can take an action in a function and execute it to every item in a list print(item)
+        (basucally instead of running for loops inside the function)  ---> [in a for loop output] print(list(map(myfunc, num_list)))
+           ---> in a list visuality string_list = ['or','yuval','maimoni']
+            map command with str
+def myfunc(string):
+    if len(string)%2 == 0:
+        return 'Even'
+    else: return 'Odd'
+print(list(map(myfunc, string_list)))
 
